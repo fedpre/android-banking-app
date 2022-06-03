@@ -3,9 +3,11 @@
 
 {Provide a description the software that you wrote and how it integrates with a Cloud Database.  Describe how to use your program.}
 
-{Describe your purpose for writing this software.}
+The Banking app developed for Android in Kotlin has the purpose to help you manage and keep track of your finances. The user creates a new account, or login into an existing one, and start using the app right away. The main dashboard shows the balance and a list of transactions that the user has done. Through the navigation at the bottom, the user can go to the operations tab to deposit or withdraw money, assign it to a specific category, choose the date, and record the transaction.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
+Both users and transactions are recorded on Firebase. The cloud database helps manage authentication and storing data for later use.
+
+Here is a working demo video and explanation of the app and how I developed it:
 
 [App Demo Video](https://youtu.be/S2m8b0olvZM)
 
@@ -19,10 +21,13 @@ In the Users collection, we store the balance of the account, which is updated e
 In the Transactions collection, we store each transaction added through the UI. It stores the amount, category, date, type of operations, and which user has input the transaction. In this way, the app shows only the transaction that are related to a specific user. 
 
 Data are fetched and stored into a map which is displayed as a RecyclerView in the Android app.
+
+
 # Development Environment
 
 * Android Studio
 * Kotlin
+* Google Firebase
 
 # Useful Websites
 
@@ -39,4 +44,4 @@ Data are fetched and stored into a map which is displayed as a RecyclerView in t
 
 * List transaction in ascending order according to newest date
 * Improve the design of the transaction list
-* Item 3
+* Allow the user to create budgets anmd each transaction is connected to a budget
